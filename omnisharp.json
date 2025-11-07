@@ -1,0 +1,17 @@
+{
+  "FileOptions": {
+    "SystemExcludeSearchPatterns": [
+      "**/node_modules/**/*",
+      "**/bin/**/*",
+      "**/obj/**/*",
+      "**/.git/**/*"
+    ]
+  },
+  "RoslynExtensionsOptions": {
+    "EnableAnalyzersSupport": true,
+    "EnableImportCompletion": true
+  },
+  "FormattingOptions": {
+    "EnableEditorConfigSupport": true
+  }
+}
