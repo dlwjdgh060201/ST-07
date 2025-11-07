@@ -31,7 +31,7 @@ namespace ST07.Enemies
         private float lastAttackTime = -999f;
         private GameObject alertInstance;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             body = GetComponent<Rigidbody2D>();
         }

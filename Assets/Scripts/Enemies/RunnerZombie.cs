@@ -9,8 +9,9 @@ namespace ST07.Enemies
         public float dashSpeedMultiplier = 3.0f;
         private bool hasAttack = false;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake(); // 부모 초기화 먼저!
             attackDamage = 10f; // 기본 데미지
             baseSpeed = 2.2f * dashSpeedMultiplier;
         }

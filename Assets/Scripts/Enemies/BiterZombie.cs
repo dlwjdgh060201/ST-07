@@ -6,8 +6,9 @@ namespace ST07.Enemies
     [RequireComponent(typeof(Collider2D))]
     public class BiterZombie : ZombieAI
     {
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake(); // 부모 초기화 먼저!
             attackDamage = 9999f; // 사실상 즉사
         }
     }
